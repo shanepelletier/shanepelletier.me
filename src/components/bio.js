@@ -36,21 +36,16 @@ const Bio = () => {
         className="bio-avatar"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
-        src="../images/profile-pic.png"
+        src="../images/profile-pic.jpg"
         width={50}
         height={50}
         quality={95}
         alt="Profile picture"
       />
-      {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
+      <p>
+          Hi! I'm Shane. I spend my time working to improve humanity, one idea
+          at a time. You can find me on <a href="https://github.com/shanepelletier">GitHub</a> and <a href="https://www.linkedin.com/in/shane-pelletier-4086ab7a/">LinkedIn</a>.
         </p>
-      )}
     </div>
   )
 }
